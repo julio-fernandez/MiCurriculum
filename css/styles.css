@@ -1,0 +1,154 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Evitar scroll Horizontal */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Animacion Skill hover */
+
+#skillsContenedor div[data-aos="fade-up"]:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s;
+}
+
+/* Side bar */
+#sideBar {
+  background-color: #041230;
+  color: white;
+  height: 100vh;
+}
+
+#sideBarImage {
+  filter: brightness(0) invert(1);
+  height: 86px;
+}
+
+.sideBarTextContainer:hover {
+  color: yellow;
+  border-color: yellow !important;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+
+}
+
+#sideBarSocialMedia a i {
+
+  color: white;
+}
+
+#sideBarSocialMedia a i:hover {
+  cursor: pointer;
+  transform: scale(2.3);
+  transition: transform 0.2s;
+  color: yellow;
+}
+
+/* Estilo de textos */
+/* Cambiar color de fondo imagen principal */
+#particles-js::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(4, 18, 48, 0.6);
+}
+
+.particles-jsTexto {
+  color: #fff;
+  position: relative;
+}
+
+#ContendorNombreIconoSideBar {
+  cursor: pointer;
+}
+
+/* Texto */
+.text-tittle {
+  color: #041230;
+}
+
+.color-primary {
+  color: #041230;
+}
+
+.text-tittle2 {
+  color: #574646;
+
+}
+
+.text-height2em {
+  line-height: 2em;
+}
+
+.text-height35em {
+  line-height: 3.5em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.font-poppins-regular {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilos imagenes animacion hover */
+.imgeInsideImg {
+  color: white;
+  font-size: 40px;
+}
+
+.imgeInsideText {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  /* line-height: 90px; */
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.imgeInsideElement:hover {
+  color: rgba(0, 0, 0, 0);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+
+/* <!-- Responsive --> */
+
+#particles-js {
+  width: 74vw;
+  height: 100hv;
+}
+
+@media (max-width: 992px) {
+  /* * {
+        border: 1px red solid;
+    } */
+
+  #particles-js {
+    width: 100vw;
+  }
+}
