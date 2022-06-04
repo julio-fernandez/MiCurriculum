@@ -108,50 +108,50 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function () {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);;
+// var count_particles, stats, update;
+// stats = new Stats;
+// stats.setMode(0);
+// stats.domElement.style.position = 'absolute';
+// stats.domElement.style.left = '0px';
+// stats.domElement.style.top = '0px';
+// document.body.appendChild(stats.domElement);
+// count_particles = document.querySelector('.js-count-particles');
+// update = function () {
+//     stats.begin();
+//     stats.end();
+//     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//     }
+//     requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);;
 
 // Limitante de numero de particulas responsivo
 /* ---------- pJS functions - modes events ------------ */
 
-pJS.fn.modes.pushParticles = function(nb, pos){
+// pJS.fn.modes.pushParticles = function(nb, pos){
 
-    pJS.tmp.pushing = true;
+//     pJS.tmp.pushing = true;
 
-    if(pJS.particles.array.length<140){
-        for(var i = 0; i < nb; i++){
-          pJS.particles.array.push(
-            new pJS.fn.particle(
-              pJS.particles.color,
-              pJS.particles.opacity.value,
-              {
-                'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
-                'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
-              }
-            )
-          )
-          if(i == nb-1){
-            if(!pJS.particles.move.enable){
-              pJS.fn.particlesDraw();
-            }
-            pJS.tmp.pushing = false;
-          }
-        }
-    }
+//     if(pJS.particles.array.length<140){
+//         for(var i = 0; i < nb; i++){
+//           pJS.particles.array.push(
+//             new pJS.fn.particle(
+//               pJS.particles.color,
+//               pJS.particles.opacity.value,
+//               {
+//                 'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
+//                 'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
+//               }
+//             )
+//           )
+//           if(i == nb-1){
+//             if(!pJS.particles.move.enable){
+//               pJS.fn.particlesDraw();
+//             }
+//             pJS.tmp.pushing = false;
+//           }
+//         }
+//     }
 
-  };
+//   };
