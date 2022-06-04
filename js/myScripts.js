@@ -39,6 +39,15 @@
 
       window.location.href = link;
   }
+    // Funcion para en envio de correo electronico automatico en contacto
+    function sendMailContactMe() {
+        var link = "mailto:cesarfdez_-_@hotmail.com" +
+            "?" +
+            "&subject=" + encodeURIComponent("Me gustaria contactarme con usted soy" + document.getElementById("MensajeContactMeName").value) +
+            "&body=" + encodeURIComponent(document.getElementById("MensajeContactMetextarea").value);
+  
+        window.location.href = link;
+    }
 
   //   Libreria Typed Configuracion
   var typed = new Typed('.typed', {
